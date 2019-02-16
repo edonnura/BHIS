@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_origin"
+        android:icon="@drawable/ic_home"
+        android:title="@string/origin" />
+
+    <item
+        android:id="@+id/navigation_diagnose"
+        android:icon="@drawable/ic_diagnose"
+        android:title="@string/diagnose" />
+
+    <item
+        android:id="@+id/navigation_therapy"
+        android:icon="@drawable/ic_therapy"
+        android:title="@string/therapy" />
+
+    <item
+        android:id="@+id/navigation_conclusion"
+        android:icon="@drawable/ic_conclusion"
+        android:title="@string/conclusion" />
+
+</menu>

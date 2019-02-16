@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".TherapyFragment">
+
+    <com.riyagayasen.easyaccordion.AccordionView
+    android:id="@+id/accordion1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:visibility="visible"
+    app:isAnimated="false"
+    app:heading="Terapia"
+    app:isExpanded="true"
+    app:isPartitioned="true"
+    android:layout_marginTop="5dp">
+    <ListView
+        android:id="@+id/lvTherapy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+</com.riyagayasen.easyaccordion.AccordionView>
+    <com.riyagayasen.easyaccordion.AccordionView
+        android:id="@+id/accordion2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:visibility="visible"
+        app:isAnimated="false"
+        app:heading="Sherbimi"
+        app:isExpanded="false"
+        app:isPartitioned="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/accordion1">
+        <ListView
+            android:id="@+id/lvServices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+    </com.riyagayasen.easyaccordion.AccordionView>
+
+</RelativeLayout>

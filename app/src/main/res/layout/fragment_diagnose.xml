@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DiagnoseFragment">
+    <com.riyagayasen.easyaccordion.AccordionView
+        android:id="@+id/accordion1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:visibility="visible"
+        app:isAnimated="false"
+        app:heading="Diagnoza Primare"
+        app:isExpanded="true"
+        app:isPartitioned="true"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/tvPrimaryDiagnose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:text="Diagnoza" />
+        <TextView
+            android:id="@+id/tvPrimaryDiagnoseValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text=""
+            android:layout_below="@id/tvPrimaryDiagnose"/>
+
+        <TextView
+            android:id="@+id/tvPrimaryAccompanyDiagnose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:text="Diagnoza Shoqeruese:"
+            android:layout_below="@id/tvPrimaryDiagnoseValue"/>
+        <ListView
+            android:id="@+id/lvAccompanyDiagnoseValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPrimaryAccompanyDiagnose"/>
+
+        <TextView
+            android:id="@+id/tvComplicationDiagnose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:text="Komplikimet:"
+            android:layout_below="@id/lvAccompanyDiagnoseValue"/>
+        <ListView
+            android:id="@+id/lvComplicationDiagnoseValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvComplicationDiagnose"/>
+    </com.riyagayasen.easyaccordion.AccordionView>
+
+    <com.riyagayasen.easyaccordion.AccordionView
+        android:id="@+id/accordion2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:visibility="visible"
+        app:isAnimated="false"
+        app:heading="Diagnoza ne leshim"
+        app:isExpanded="false"
+        app:isPartitioned="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/accordion1">
+
+        <TextView
+            android:id="@+id/tvReleasePrimaryDiagnose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:text="Diagnoza" />
+        <TextView
+            android:id="@+id/tvReleasePrimaryDiagnoseValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text=""
+            android:layout_below="@id/tvReleasePrimaryDiagnose"/>
+
+        <TextView
+            android:id="@+id/tvReleaseAccompanyDiagnose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:text="Diagnoza Shoqeruese:"
+            android:layout_below="@id/tvReleasePrimaryDiagnoseValue"/>
+        <ListView
+            android:id="@+id/lvReleaseAccompanyDiagnoseValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvReleaseAccompanyDiagnose"/>
+
+        <TextView
+            android:id="@+id/tvReleaseComplicationDiagnose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:text="Komplikimet:"
+            android:layout_below="@id/lvReleaseAccompanyDiagnoseValue"/>
+        <ListView
+            android:id="@+id/lvReleaseComplicationDiagnoseValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvReleaseComplicationDiagnose"/>
+    </com.riyagayasen.easyaccordion.AccordionView>
+</RelativeLayout>

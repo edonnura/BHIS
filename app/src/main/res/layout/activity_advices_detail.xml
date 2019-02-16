@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdvicesDetailActivity"
+    android:padding="15dp">
+    <ImageView
+        android:id="@+id/ivDetailsImageUrl"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+    <TextView
+        android:id="@+id/tvDetailsTitle"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Titulli i keshilles mjekesore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivDetailsImageUrl"/>
+    <TextView
+        android:textSize="12dp"
+        android:id="@+id/tvDetailsPublisher"
+        android:text="Publikuesi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDetailsTitle"
+        android:layout_alignParentRight="true"
+        />
+    <TextView
+        android:layout_marginTop="15dp"
+        android:textSize="15dp"
+        android:id="@+id/tvDetailsContent"
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDetailsPublisher"
+        />
+</RelativeLayout>

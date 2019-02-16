@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tvDrugValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drug"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/tvQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sasia:"
+        android:textStyle="normal"
+        android:layout_below="@id/tvDrugValue"/>
+    <TextView
+        android:id="@+id/tvQuantityValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="1"
+        android:textStyle="bold"
+        android:layout_toEndOf="@id/tvQuantity"
+        android:layout_below="@id/tvDrugValue"/>
+    <TextView
+        android:id="@+id/tvFrequency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Frekuenca:"
+        android:textStyle="normal"
+        android:layout_marginLeft="50dp"
+        android:layout_toEndOf="@id/tvQuantityValue"
+        android:layout_below="@id/tvDrugValue"/>
+    <TextView
+        android:id="@+id/tvFrequencyValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="1"
+        android:textStyle="bold"
+        android:layout_toEndOf="@id/tvFrequency"
+        android:layout_below="@id/tvDrugValue"/>
+    <TextView
+        android:id="@+id/tvDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kohezgjatja:"
+        android:textStyle="normal"
+        android:layout_below="@id/tvQuantity"/>
+    <TextView
+        android:id="@+id/tvDurationValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="2 jave"
+        android:textStyle="bold"
+        android:layout_toEndOf="@id/tvDuration"
+        android:layout_below="@id/tvQuantity"/>
+</RelativeLayout>
